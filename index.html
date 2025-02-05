@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,11 +66,14 @@
   gtag('js', new Date());
 
   gtag('config', 'G-8F4WPDMPL5');
+
 </script>
+
     <title>The SQL Murder Mystery</title>
 </head>
 
 <body>
+
     <nav id="navbar-product-top" class="navbar navbar-dark">
         <ul>
             <li class="logo">
@@ -84,29 +87,14 @@
         <span class="icon-menu"></span>
       </button>
         </div>
-        <ul class="nav-right navbar-nav">
-
-
-            <li><a class="button button-dark button-small-tablet  button-active" href="https://knightlab.northwestern.edu/projects/">Projects</a></li>
-
-            <li><a class="button button-dark button-small-tablet  " href="https://studio.knightlab.com/">Studio</a></li>
-
-            <li><a class="button button-dark button-small-tablet  " href="https://localnewsinitiative.northwestern.edu/">Local
-          News</a></li>
-
-            <li><a class="button button-dark button-small-tablet  " href="https://knightlab.northwestern.edu/posts/">Posts</a>
-            </li>
-
-            <li><a class="button button-dark button-small-tablet  " href="https://knightlab.northwestern.edu/community/">Community</a></li>
-
-        </ul>
+        
     </nav>
 
     <header class="header-product">
         <h1 class="product-logo product-logo-large">
             SQL Murder Mystery
         </h1>
-        <h2 class="product-tagline">Can you find out whodunnit?</h2>
+        <h2 class="product-tagline">IEEE-CS Edition</h2>
     </header>
 
     <div class="container">
@@ -137,47 +125,13 @@
             <div class="grid-item">
                 <h2 id="experienced">Experienced SQL sleuths start here</h2>
                 <p>
-                    A crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a <strong>​murder​</strong> that occurred sometime on ​<strong>Jan.15, 2018​</strong>                    and that it took place in ​<strong>SQL City​</strong>. Start by retrieving the corresponding crime scene report from the police department’s database.
+                    A crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a <strong>​murder​</strong> that occurred sometime on ​<strong>Nov.5, 2018​</strong>                    and that it took place in ​<strong>SQL City​</strong>. Start by retrieving the corresponding crime scene report from the police department’s database.
                 </p>
-
-                <h3>Exploring the Database Structure</h3>
 
                 <p>
-                    Experienced SQL users can often use database queries to infer the structure of a database. But each database system has different ways of managing this information. The SQL Murder Mystery is built using SQLite. Use this SQL command to find the tables
-                    in the Murder Mystery database.
+                    If you're  comfortable with SQL, you can probably get it from here.
                 </p>
-
-                <sql-exercise data-question="Run this query to find the names of the tables in this database." data-comment="This command is specific to SQLite. For other databases, you'll have to learn their specific syntax." data-default-text="SELECT name 
-  FROM sqlite_master
- where type = 'table'"></sql-exercise>
-
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="grid-item">
-                <p>
-                    Besides knowing the table names, you need to know how each table is structured. The way this works is also dependent upon which database technology you use. Here's how you do it with SQLite.
-                </p>
-
-                <sql-exercise data-question="Run this query to find the structure of the `crime_scene_report` table" data-comment="Change the value of 'name' to see the structure of the other tables you learned about with the previous query." data-default-text="SELECT sql 
-  FROM sqlite_master
- where name = 'crime_scene_report'"></sql-exercise>
-
-            </div>
-        </div>
-
-
-        <div class="grid">
-            <div class="grid-item">
-                <h3>The rest is up to you!</h3>
-                <p>
-                    If you're really comfortable with SQL, you can probably get it from here.
-                </p>
-                <p>
-                    But <a id="show-schema">click here</a> to show the schema diagram.
-                    <img id="experienced-schema" src="schema.png" width='1002' height='491'>
-                </p>
+               
                 <p>
                     And you can always go to the <a href="walkthrough.html">walkthrough</a>.
                 </p>
@@ -189,22 +143,23 @@
 
 
               "></sql-exercise>
-                <!-- newlines in data-default-text force input to be larger -->
+
             </div>
         </div>
 
-        <div id="check-solution" class="grid">
+
+        <div class="grid">
             <div class="grid-item">
-                <h3>Check your solution</h3>
-                <sql-exercise data-question="Did you find the killer?" data-comment="" data-default-text="INSERT INTO solution VALUES (1, 'Insert the name of the person you found here');
-        
-        SELECT value FROM solution;"></sql-exercise>
-            </div>
-        </div>
-
+                
+               
         <div id="credits" class="grid">
             <div class="grid-item">
                 <h3>Credits</h3>
+
+ <p>This website has been modified by Sana Seera Valappil for hosting the SQL Murder Mystery event by IEEE-CS, AUS. I’d like to acknowledge and extend my thanks to the original developers of The SQL Murder Mystery for their work, which served as the foundation for this site. The changes include a new database and the removal of some elements from the home page.
+
+For the original project, please visit <a href = "https://mystery.knightlab.com/"> mystery.knightlab.com</a></p>
+
                 <p>The SQL Murder Mystery was created by <a href="https://twitter.com/joonparkmusic">Joon Park</a> and <a href="https://twitter.com/Cathy_MeiyingHe">Cathy He</a> while they were Knight Lab fellows. See the <a href="https://github.com/NUKnightLab/sql-mysteries">GitHub repository</a>                    for more information.</p>
                 <p>Adapted and produced for the web by <a href="https://twitter.com/joegermuska">Joe Germuska</a>.</p>
                 <p>This mystery was inspired by <a href="https://github.com/veltman/clmystery">a crime in the neighboring
@@ -214,7 +169,8 @@
                 <p>Detective illustration courtesy of <a href="https://www.vecteezy.com/">Vectors by Vecteezy</a></p>
                 <p>Original code for this project is released under the <a href="https://github.com/NUKnightLab/sql-mysteries/blob/master/LICENSE">MIT License</a></p>
                 <p>Original text and other content for this project is released under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons CC BY-SA 4.0</a></p>
-            </div>
+
+                           </div>
         </div>
     </div>
 
